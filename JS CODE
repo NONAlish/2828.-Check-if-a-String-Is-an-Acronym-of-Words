@@ -1,0 +1,17 @@
+ /**
+ * @param {string[]} words
+ * @param {string} s
+ * @return {boolean}
+ */
+var isAcronym = function(words, s) {
+    const arr = [];
+    for(let i of words) {
+        arr.push(i[0])
+    }
+    let array = arr.join('');
+    if (array === s) {
+        return true
+    } else {
+        return false
+    }
+};
